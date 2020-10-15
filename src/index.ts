@@ -22,6 +22,7 @@ export interface MarkdownData {
   date?: Date
   author?: string
   image?: string
+  canonical?: string
 }
 export interface ProjectData {
   name: string
@@ -55,6 +56,9 @@ const getMarkdown = (dir: string, page: string): MarkdownData => {
     date: content.data.date || new Date(),
     author: content.data.author || '',
     image: content.data.image || '',
+    canonical: content.data.canonical
+      ? `<link rel="canonical" href="${content.data.canonical}">`
+      : '',
     body,
     path: page.slice(0, -3),
   }

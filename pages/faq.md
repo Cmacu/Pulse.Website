@@ -1,9 +1,9 @@
 ---
-title: FAQ
-date: 2020-06-23
+title: Pulse Games FAQ
+date: 2020-10-13
 author: Stasi Vladimirov
 description: Frequently Asked Questions for the Pulse Games platform
-keywords: Pulse Games, FAQ, Q&A, questions, how-to, documentation, information
+keywords: Pulse Games, FAQ, Q&A, questions, how-to, documentation, information, board games
 ---
 
 <style>
@@ -21,12 +21,24 @@ keywords: Pulse Games, FAQ, Q&A, questions, how-to, documentation, information
 
 ## [#](faq.html#the-platform)The platform
 
+#### [#](faq.html#what-is-pulse-games)What is Pulse Games?
+
+Great question. It's an online platform for board games.
+It's focused on 2 player competitive games.
+Our goal is to offer variety of games available free of charge.
+We strive to make the games cross platform and mobile friendly.
+
+#### [#](faq.html#what-games-are-available)What games are available?
+
+We are launching with **Schotten Totten 2** by Reiner Knizia and plan to add a few more titles very soon.
+If there is a game you would love to see implemented here please [contact us](contact/index.html)
+
 ## [#](faq.html#the-pulse-games-team)The Pulse Games Team
 
 #### [#](faq.html#who-created-this-and-why)Who created this and why?
 
 The app and the website were initially built by Cmacu and Will.
-The [Pulse Games App](https://play.pulsegames.io) was created to enable real-time competitive gaming.
+The [Pulse Games App](play/index.html) was created to enable real-time competitive gaming.
 The goal was to match similar-skilled opponents, and to rank the players on a season-based leaderboard.
 Check this [blog article](01-hello-pulse.html) to learn more about the inspiration that started this project.
 
@@ -48,7 +60,7 @@ Feel free to [contact us](contact.html).
 
 Pulse Games doesn't require a separate password.
 Access to the platform is granted through your CGE online account.
-[Open the Pulse Games App](https://play.pulsegames.io) to get started.
+[Open the Pulse Games App](play/index.html) to get started.
 If you have any trouble with access, please [contact us](contact.html).
 
 ## [#](faq.html#the-matchmaker)The Matchmaker
@@ -151,7 +163,7 @@ If you get matched against your friend, your game will be ranked, but you cannot
 
 #### [#](faq.html#where-can-i-see-my-past-matches)Where can I see my past matches?
 
-Hit "Profile" inside the [Pulse Games app](https://play.pulsegames.io) to view your match history.
+Hit "Profile" inside the [Pulse Games app](play/index.html) to view your match history.
 
 #### [#](faq.html#where-can-i-see-games-i-played-vs-another-player)Where can I see games I played vs another player?
 
