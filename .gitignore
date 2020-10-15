@@ -1,0 +1,25 @@
+# npm modules
+node_modules
+
+# build directory
+/build
+
+# ignore pages
+/dist/*.html
+
+# ignore sitemap
+sitemap.xml
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Deployment script
+deploy.sh
+
+# Mac cache files
+.DS_Store

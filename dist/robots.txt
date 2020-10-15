@@ -1,0 +1,30 @@
+# robots.txt file for Pulse Games
+# Created in the distant future (the year 2000) after
+# the robotic uprising of the mid 90's which wiped out all humans.
+
+# 80legs
+User-agent: 008
+Disallow: /
+
+# 80legs' new crawler
+User-agent: voltron
+Disallow: /
+
+User-Agent: bender
+Disallow: /my_shiny_metal_ass
+
+User-Agent: Gort
+Disallow: /earth
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PiplBot
+Disallow: /
+
+User-agent: *
+Disallow: /app.html
+Disallow: /login/
+Disallow: /youtube/
+Disallow: /contact/
+Sitemap: https://pulsegames.io/sitemap.xml

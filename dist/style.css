@@ -1,0 +1,456 @@
+/* Settings Styles */
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url(assets/RobotoSlab-VariableFont_wght.ttf);
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/Roboto-Regular.ttf');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/Roboto-Italic.ttf');
+  font-style: italic;
+  font-display: fallback;
+}
+
+html {
+  --q-color-dark: #2a3035;
+  --q-color-primary: orange;
+  --q-color-secondary: #fee8af;
+  --q-color-accent: #4e89ce;
+  --q-color-positive: #8bbd23;
+  --q-color-negative: #da2326;
+  --q-color-info: #ccffff;
+  --q-color-warning: gold;
+  --q-color-white: white;
+  --q-color-black: rgb(29, 29, 29);
+}
+
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'RobotoSlab', serif;
+}
+
+h1 {
+  color: #4e89ce;
+  color: var(--q-color-accent);
+}
+
+h1 strong,
+h2 strong,
+h3 strong {
+  color: orange;
+  color: var(--q-color-primary);
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: #fee8af;
+  color: var(--q-color-secondary);
+}
+
+h4 {
+  text-align: left;
+  margin-left: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a {
+  /* color: white; */
+  text-decoration: none;
+  color: orange;
+  color: var(--q-color-primary);
+}
+
+input {
+  font-size: 14px;
+  font-family: 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+
+input:focus {
+  outline-offset: 0px;
+  outline: none;
+  border: 1px solid var(--q-color-accent) !important;
+}
+
+#content ul li {
+  margin-left: 19px;
+  list-style: disc;
+}
+
+/* Layout Styles */
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #2a3035;
+  background-color: var(--q-color-dark);
+  color: white;
+  color: var(--q-color-white);
+  font-size: 16px;
+}
+
+header,
+footer {
+  position: fixed;
+  width: 100%;
+  /* height: 50px; */
+  background: rgb(29, 29, 29);
+  background: var(--q-color-black);
+  padding: 10px 20px;
+  line-height: 30px;
+}
+
+header {
+  top: 0px;
+  font-size: 20px;
+  color: white;
+  color: var(--q-color-white);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0px;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  margin-top: 5px;
+}
+
+footer path {
+  fill: white;
+  fill: var(--q-color-white);
+}
+
+/* Logo Styles */
+header .logo {
+  display: flex;
+}
+
+header .logo a:first-child {
+  display: flex;
+  color: orange;
+  color: var(--q-color-primary);
+  font-family: 'RobotoSlab', serif;
+  margin-right: 20px;
+}
+
+header .logo span {
+  margin-left: 10px;
+}
+
+/* Navigation Styles */
+
+#menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#menu ul {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu ul li {
+  list-style: none;
+}
+
+#menu ul li a {
+  margin-right: 20px;
+  font-variant: small-caps;
+  color: white;
+  color: var(--q-color-white);
+}
+
+#menu-open,
+#menu-close {
+  display: none;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+#menu input:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Content Styles */
+
+#content {
+  box-sizing: border-box;
+  padding: 70px 20px;
+  margin-bottom: 70px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  text-align: center;
+}
+
+.container ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container li {
+  text-align: left;
+}
+
+.container p {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.container h3 a {
+  border-bottom: 1px solid orange;
+  border-bottom: 1px solid var(--q-color-primary);
+}
+
+/* Special styles */
+
+p strong {
+  color: #ccffff;
+  color: var(--q-color-info);
+  font-weight: normal;
+}
+
+.text-primary {
+  color: orange;
+  color: var(--q-color-primary);
+}
+
+.button {
+  background: #2567a8;
+  border: 1px solid #2567a8;
+  color: white;
+  color: var(--q-color-white);
+  padding: 0px 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+#content img {
+  max-width: 100%;
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); */
+}
+
+#content pre {
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  background: rgb(29, 29, 29);
+  background: var(--q-color-black);
+  font-size: 13px;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 800px) {
+  #menu-open {
+    display: block;
+  }
+
+  #menu-mobile {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    height: 100vh;
+    background: rgb(29, 29, 29);
+    background: var(--q-color-black);
+  }
+
+  #menu ul {
+    display: block;
+  }
+
+  #menu ul li a {
+    display: block;
+    width: 100vw;
+    margin-right: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer .credit span {
+    display: none;
+  }
+}
+
+/* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+#mc_embed_signup form {
+  text-align: center;
+  /* padding: 10px 0 10px 0; */
+}
+.mc-field-group {
+  display: inline-block;
+} /* positions input field horizontally */
+#mc_embed_signup input.email {
+  border: none;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana,    sans-serif;
+  */ /*font-size: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;*/
+  color: #343434;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0px 0.4em;
+  display: inline-block;
+  margin: 0;
+  width: 200px;
+  vertical-align: top;
+}
+#mc_embed_signup label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+#mc_embed_signup .clear {
+  display: inline-block;
+} /* positions button horizontally in line with input */
+#mc_embed_signup .button {
+  height: 30px;
+  /* font-size: 13px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #aaa;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  display: inline-block;
+  margin: 0; */
+  box-shadow: none;
+  transition: all 0.23s ease-in-out 0s;
+}
+#mc_embed_signup .button:hover {
+  /* background-color: #777; */
+  cursor: pointer;
+}
+#mc_embed_signup div#mce-responses {
+  float: left;
+  top: -1.4em;
+  padding: 0em 0.5em 0em 0.5em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 5%;
+  clear: both;
+}
+#mc_embed_signup div.response {
+  margin: 1em 0;
+  padding: 1em 0.5em 0.5em 0;
+  font-weight: bold;
+  float: left;
+  top: -1.5em;
+  z-index: 1;
+  width: 80%;
+}
+#mc_embed_signup #mce-error-response {
+  display: none;
+}
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none;
+}
+#mc_embed_signup label.error {
+  display: block;
+  float: none;
+  width: auto;
+  margin-left: 1.05em;
+  text-align: left;
+  padding: 0.5em 0;
+}
+@media (max-width: 768px) {
+  #mc_embed_signup input.email {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #mc_embed_signup .clear {
+    display: block;
+    width: 100%;
+  }
+  #mc_embed_signup .button {
+    width: 100%;
+    margin: 0;
+  }
+}
+#mc_embed_signup {
+  /* background: #fff; */
+  clear: left;
+  /* font: 14px Helvetica, Arial, sans-serif; */
+  /* width: 100%; */
+}

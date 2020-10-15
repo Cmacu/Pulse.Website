@@ -1,0 +1,26 @@
+# Pulse Games [website](https://pulsegames.io) Change Log
+{{#each releases}}
+
+
+  ## What's new in {{title}} ({{niceDate}})
+
+  {{! List commits with `break:` somewhere in the message }}
+  {{#commit-list commits heading='### Breaking Changes' message='break:'}}
+    - {{subject}} ({{shorthash}})
+  {{/commit-list}}
+
+  {{! List commits that add new features, but not those already listed above }}
+  {{#commit-list commits heading='### Features' message='(feat\(|feat:)'}}
+    - {{subject}} ({{shorthash}})
+  {{/commit-list}}
+
+  {{! List commits that add fixes, but not those already listed above }}
+  {{#commit-list commits heading='### Fixes' message='(fix\(|fix:)'}}
+    - {{subject}} ({{shorthash}})
+  {{/commit-list}}
+
+  {{! List other commits, but not those already listed above }}
+  {{#commit-list commits heading='### Other' exclude='(break:|feat\(|feat:|fix\(|fix:)'}}
+    - {{subject}} ({{shorthash}})
+  {{/commit-list}}
+{{/each}}

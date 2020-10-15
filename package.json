@@ -1,0 +1,51 @@
+{
+  "name": "pulsegames.io",
+  "project": "Pulse Games",
+  "icon": "assets/icon.png",
+  "version": "0.14.0",
+  "description": "Competitive two-player board games. Free. Online. Mobile-friendly.",
+  "main": "./dist/index.html",
+  "scripts": {
+    "compile": "npx tsc",
+    "build": "node ./build/index.js",
+    "run": "npm run compile && npm run build",
+    "release-patch": "npx release-it --ci",
+    "release-minor": "npx release-it minor --ci",
+    "deploy": "npm run run && bash deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stasi Vladimirov <st.ts.vladimirov@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/html-minifier": "^4.0.0",
+    "@types/marked": "^1.1.0",
+    "@types/node": "^14.0.13",
+    "auto-changelog": "^2.1.0",
+    "fs": "0.0.1-security",
+    "gray-matter": "^4.0.2",
+    "html-minifier": "^4.0.0",
+    "marked": "^1.1.0",
+    "release-it": "^13.6.3",
+    "typescript": "^3.9.5"
+  },
+  "outputDir": "./dist",
+  "pagesDir": "./pages",
+  "postsDir": "./posts",
+  "styleCss": "./dist/style.css",
+  "scriptJs": "./dist/script.js",
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "quoteProps": "consistent",
+    "trailingComma": "all"
+  },
+  "dependencies": {},
+  "release-it": {
+    "npm": {
+      "publish": false
+    },
+    "hooks": {
+      "after:bump": "npx auto-changelog -p -commit-limit false --template ./changelog-template.hbs"
+    }
+  }
+}
