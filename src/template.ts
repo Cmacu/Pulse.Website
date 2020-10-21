@@ -80,7 +80,7 @@ const parseTemplate = (
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="https://kickstarter.com" rel="noopener" target="_blank">Kickstarter</a></li>
+              <li><a href="https://www.kickstarter.com/projects/pulsegamesst2/pulsegamesio-the-mobile-board-gaming-platform?ref=website" rel="noopener" target="_blank">Kickstarter</a></li>
               <li><a href="blog.html">Blog</a></li>
             </ul>
           </div>
