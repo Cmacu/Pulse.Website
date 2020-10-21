@@ -2,7 +2,7 @@
   "name": "pulsegames.io",
   "project": "Pulse Games",
   "icon": "assets/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Competitive two-player board games. Free. Online. Mobile-friendly.",
   "main": "./dist/index.html",
   "scripts": {
